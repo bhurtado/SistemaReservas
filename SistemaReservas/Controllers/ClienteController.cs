@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using SistemaReservas.LogicaNegocio.Interfaces;
 using SistemaReservas.LogicaNegocio;
+using SistemaReservas.Entidades;
 
 namespace SistemaReservas.Controllers
 {
@@ -24,6 +25,7 @@ namespace SistemaReservas.Controllers
 
         public ActionResult Index()
         {
+            var cliente = clienteLN.LeerTodos();
             return View();
         }
 
@@ -47,18 +49,12 @@ namespace SistemaReservas.Controllers
         // POST: /Cliente/Create
 
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(Cliente cliente)
         {
-            try
-            {
-                // TODO: Add insert logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
+            if (!ModelState.IsValid)
+                return View(cliente);
+            clienteLN.Insertar(cliente);
+            return RedirectToAction("Index");
         }
 
         //
