@@ -8,5 +8,6 @@ namespace SistemaReservas.Entidades
 {
     public class Reserva
     {
+        // Implementation
     }
 }
