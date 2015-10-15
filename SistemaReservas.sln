@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaReservas", "SistemaReservas\SistemaReservas.csproj", "{5F0B6BEA-BAB4-4485-A1FD-9BAC27E2B43D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaReservas.Entidades", "SistemaReservas.Entidades\SistemaReservas.Entidades.csproj", "{C5432784-814D-42BE-BA80-6B5D6A5E8425}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F0B6BEA-BAB4-4485-A1FD-9BAC27E2B43D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F0B6BEA-BAB4-4485-A1FD-9BAC27E2B43D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F0B6BEA-BAB4-4485-A1FD-9BAC27E2B43D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F0B6BEA-BAB4-4485-A1FD-9BAC27E2B43D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5432784-814D-42BE-BA80-6B5D6A5E8425}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5432784-814D-42BE-BA80-6B5D6A5E8425}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5432784-814D-42BE-BA80-6B5D6A5E8425}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5432784-814D-42BE-BA80-6B5D6A5E8425}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
