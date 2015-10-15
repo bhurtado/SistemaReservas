@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SistemaReservas.Entidades
 {
-    public class Class1
+    public class Reserva
     {
     }
 }
