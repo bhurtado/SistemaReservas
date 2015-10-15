@@ -4,12 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SistemaReservas.LogicaNegocio.Interfaces;
+using SistemaReservas.AccesoDatos.Interfaces;
+using SistemaReservas.AccesoDatos;
 
 namespace SistemaReservas.LogicaNegocio
 {
     public class ClienteLN : IClienteLN
     {
+        private readonly IClienteDAO clienteDAO;
 
+        public ClienteLN()
+        {
+            clienteDAO = new ClienteDAO();
+        }
+        public ClienteLN(IClienteDAO dao)
+        {
+            clienteDAO = dao;
+        }
 
         public IEnumerable<Entidades.Cliente> LeerTodos()
         {
