@@ -5,25 +5,30 @@ using System.Text;
 using System.Threading.Tasks;
 using SistemaReservas.Entidades;
 using SistemaReservas.AccesoDatos.Interfaces;
+using System.Data.Entity;
 
 namespace SistemaReservas.AccesoDatos
 {
     public class ClienteDAO : IClienteDAO
     {
-
+        ReservaDatabaseContext context = new ReservaDatabaseContext();
+       
         public IEnumerable<Cliente> LeerTodos()
         {
-            throw new NotImplementedException();
+            var clientes = context.Clientes;
+            return clientes.ToList();
         }
 
         public Cliente LeerCliente(Cliente cliente)
         {
-            throw new NotImplementedException();
+            var p = context.Clientes.Where(c => c.ID == cliente.ID);
+            return p.SingleOrDefault();
         }
 
         public int Insertar(Cliente cliente)
         {
-            throw new NotImplementedException();
+            context.Clientes.Add(cliente);
+            return context.SaveChanges();
         }
 
         public bool Actualizar(Cliente cliente)
