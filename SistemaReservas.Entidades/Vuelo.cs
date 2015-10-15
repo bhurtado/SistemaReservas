@@ -8,5 +8,7 @@ namespace SistemaReservas.Entidades
 {
     public class Vuelo
     {
+        public int ID { get; set; }
+        public string Nombre { get; set; }
     }
 }
