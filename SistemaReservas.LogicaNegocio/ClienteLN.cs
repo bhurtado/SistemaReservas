@@ -24,27 +24,27 @@ namespace SistemaReservas.LogicaNegocio
 
         public IEnumerable<Entidades.Cliente> LeerTodos()
         {
-            throw new NotImplementedException();
+            return clienteDAO.LeerTodos();
         }
 
         public Entidades.Cliente LeerCliente(Entidades.Cliente cliente)
         {
-            throw new NotImplementedException();
+            return clienteDAO.LeerCliente(cliente);
         }
 
         public int Insertar(Entidades.Cliente cliente)
         {
-            throw new NotImplementedException();
+            return clienteDAO.Insertar(cliente);
         }
 
         public bool Actualizar(Entidades.Cliente cliente)
         {
-            throw new NotImplementedException();
+            return clienteDAO.Actualizar(cliente);
         }
 
         public bool Eliminar(Entidades.Cliente cliente)
         {
-            throw new NotImplementedException();
+            return clienteDAO.Eliminar(cliente);
         }
     }
 }
