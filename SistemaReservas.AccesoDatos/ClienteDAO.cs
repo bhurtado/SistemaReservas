@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SistemaReservas.AccesoDatos.Interfaces
+namespace SistemaReservas.AccesoDatos
 {
-    public class Class1
+    class ClienteDAO
     {
     }
 }

@@ -7,12 +7,12 @@ using SistemaReservas.Entidades;
 
 namespace SistemaReservas.AccesoDatos.Interfaces
 {
-    interface IClienteDAO
+    public interface IClienteDAO
     {
-        public IEnumerable<Cliente> LeerTodos();
-        public Cliente LeerCliente(Cliente cliente);
-        public int Insertar(Cliente cliente);
-        public bool Actualizar(Cliente cliente);
-        public bool Eliminar(Cliente cliente);
+         IEnumerable<Cliente> LeerTodos();
+         Cliente LeerCliente(Cliente cliente);
+         int Insertar(Cliente cliente);
+         bool Actualizar(Cliente cliente);
+         bool Eliminar(Cliente cliente);
     }
 }
