@@ -33,12 +33,16 @@ namespace SistemaReservas.AccesoDatos
 
         public bool Actualizar(Cliente cliente)
         {
-            throw new NotImplementedException();
+            context.Clientes.Attach(cliente);
+            context.Entry(cliente).State = EntityState.Modified;
+            return (context.SaveChanges() != 0);
         }
 
         public bool Eliminar(Cliente cliente)
         {
-            throw new NotImplementedException();
+            context.Clientes.Attach(cliente);
+            context.Clientes.Remove(cliente);
+            return (context.SaveChanges() != 0);
         }
     }
 }
