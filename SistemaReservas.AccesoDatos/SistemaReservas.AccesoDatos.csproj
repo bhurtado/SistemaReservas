@@ -42,6 +42,16 @@
     <Compile Include="ClienteDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SistemaReservas.AccesoDatos.Interfaces\SistemaReservas.AccesoDatos.Interfaces.csproj">
+      <Project>{7ad0307f-4504-44c0-a542-280f1bc05547}</Project>
+      <Name>SistemaReservas.AccesoDatos.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SistemaReservas.Entidades\SistemaReservas.Entidades.csproj">
+      <Project>{c5432784-814d-42be-ba80-6b5d6a5e8425}</Project>
+      <Name>SistemaReservas.Entidades</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
