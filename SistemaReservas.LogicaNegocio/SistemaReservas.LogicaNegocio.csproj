@@ -39,7 +39,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClienteLN.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SistemaReservas.AccesoDatos.Interfaces\SistemaReservas.AccesoDatos.Interfaces.csproj">
+      <Project>{7ad0307f-4504-44c0-a542-280f1bc05547}</Project>
+      <Name>SistemaReservas.AccesoDatos.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SistemaReservas.AccesoDatos\SistemaReservas.AccesoDatos.csproj">
+      <Project>{9ccbde9b-6599-4b0d-9baf-e749f905d8aa}</Project>
+      <Name>SistemaReservas.AccesoDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SistemaReservas.Entidades\SistemaReservas.Entidades.csproj">
+      <Project>{c5432784-814d-42be-ba80-6b5d6a5e8425}</Project>
+      <Name>SistemaReservas.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SistemaReservas.LogicaNegocio.Interfaces\SistemaReservas.LogicaNegocio.Interfaces.csproj">
+      <Project>{a561c91b-7218-4aec-abbb-24a7b6a40c16}</Project>
+      <Name>SistemaReservas.LogicaNegocio.Interfaces</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
