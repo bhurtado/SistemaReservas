@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaReservas", "SistemaR
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaReservas.Entidades", "SistemaReservas.Entidades\SistemaReservas.Entidades.csproj", "{C5432784-814D-42BE-BA80-6B5D6A5E8425}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaReservas.Validacion", "SistemaReservas.Validacion\SistemaReservas.Validacion.csproj", "{6535DB39-A2C9-4AB8-AE12-D4065E944873}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{C5432784-814D-42BE-BA80-6B5D6A5E8425}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5432784-814D-42BE-BA80-6B5D6A5E8425}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5432784-814D-42BE-BA80-6B5D6A5E8425}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6535DB39-A2C9-4AB8-AE12-D4065E944873}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6535DB39-A2C9-4AB8-AE12-D4065E944873}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6535DB39-A2C9-4AB8-AE12-D4065E944873}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6535DB39-A2C9-4AB8-AE12-D4065E944873}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
