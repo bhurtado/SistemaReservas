@@ -25,8 +25,8 @@ namespace SistemaReservas.Controllers
 
         public ActionResult Index()
         {
-            var cliente = clienteLN.LeerTodos();
-            return View();
+            var clientes = clienteLN.LeerTodos();
+            return View(clientes);
         }
 
         //
