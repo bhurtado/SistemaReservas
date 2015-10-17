@@ -13,5 +13,6 @@ namespace SistemaReservas.Entidades
     {
         public int ID { get; set; }
         public string Nombre { get; set; }
+        public IEnumerable<Reserva> Reservas { get; set; }
     }
 }

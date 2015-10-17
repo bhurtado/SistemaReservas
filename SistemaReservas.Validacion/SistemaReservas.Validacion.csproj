@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="ClienteMetadata.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReservaMetadata.cs" />
     <Compile Include="VueloMetadata.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

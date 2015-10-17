@@ -23,5 +23,6 @@ namespace SistemaReservas.Entidades
                 return Apellido + "  " + Nombre;
             }
         }
+        public IEnumerable<Reserva> Reservas { get; set; }
     }
 }
