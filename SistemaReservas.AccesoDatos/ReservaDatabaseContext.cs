@@ -15,6 +15,14 @@ namespace SistemaReservas.AccesoDatos
         { }
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Vuelo> Vuelos { get; set; }
-        //
+        
+        //  Fluent  API
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            //modelBuilder.Entity<Vuelo>().HasKey(t =>new {
+            //    t.ID, t.Nombre});
+
+        }
     }
 }

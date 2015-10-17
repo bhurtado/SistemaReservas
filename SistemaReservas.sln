@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaReservas", "SistemaReservas\SistemaReservas.csproj", "{5F0B6BEA-BAB4-4485-A1FD-9BAC27E2B43D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7AD0307F-4504-44C0-A542-280F1BC05547} = {7AD0307F-4504-44C0-A542-280F1BC05547}
+		{9CCBDE9B-6599-4B0D-9BAF-E749F905D8AA} = {9CCBDE9B-6599-4B0D-9BAF-E749F905D8AA}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaReservas.Entidades", "SistemaReservas.Entidades\SistemaReservas.Entidades.csproj", "{C5432784-814D-42BE-BA80-6B5D6A5E8425}"
 EndProject
