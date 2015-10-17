@@ -14,6 +14,7 @@ namespace SistemaReservas.AccesoDatos
             base("name=ReservaDatabase")
         { }
         public DbSet<Cliente> Clientes { get; set; }
+        public DbSet<Vuelo> Vuelos { get; set; }
         //
     }
 }

@@ -47,8 +47,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClienteDAO.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReservaDatabaseContext.cs" />
+    <Compile Include="VueloDAO.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SistemaReservas.AccesoDatos.Interfaces\SistemaReservas.AccesoDatos.Interfaces.csproj">
@@ -58,6 +60,10 @@
     <ProjectReference Include="..\SistemaReservas.Entidades\SistemaReservas.Entidades.csproj">
       <Project>{c5432784-814d-42be-ba80-6b5d6a5e8425}</Project>
       <Name>SistemaReservas.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SistemaReservas.Validacion\SistemaReservas.Validacion.csproj">
+      <Project>{6535db39-a2c9-4ab8-ae12-d4065e944873}</Project>
+      <Name>SistemaReservas.Validacion</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
