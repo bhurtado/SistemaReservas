@@ -62,27 +62,23 @@ namespace SistemaReservas.Controllers
         //
         // GET: /Cliente/Edit/5
 
-        public ActionResult Edit(int id)
+        public ActionResult Edit(int? id)
         {
-            return View();
+            var cliente = clienteLN.LeerCliente(
+                new Cliente { ID = id.Value });
+            return View(cliente);
         }
 
         //
         // POST: /Cliente/Edit/5
 
         [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        public ActionResult Edit(Cliente cliente)
         {
-            try
-            {
-                // TODO: Add update logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
+            if (!ModelState.IsValid)
+                return View(cliente);
+            clienteLN.Actualizar(cliente);
+            return RedirectToAction("Index");
         }
 
         //
