@@ -32,9 +32,11 @@ namespace SistemaReservas.Controllers
         //
         // GET: /Cliente/Details/5
 
-        public ActionResult Details(int id)
+        public ActionResult Details(int? id)
         {
-            return View();
+            var cliente = clienteLN.LeerCliente(
+                new Cliente { ID = id.Value });
+            return View(cliente);
         }
 
         //
