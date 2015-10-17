@@ -15,6 +15,7 @@ namespace SistemaReservas.AccesoDatos
         { }
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Vuelo> Vuelos { get; set; }
+        public DbSet<Reserva> Reservas { get; set; }
         
         //  Fluent  API
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

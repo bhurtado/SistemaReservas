@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="ClienteLN.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReservaLN.cs" />
     <Compile Include="VueloLN.cs" />
   </ItemGroup>
   <ItemGroup>
