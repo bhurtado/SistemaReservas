@@ -84,27 +84,21 @@ namespace SistemaReservas.Controllers
         //
         // GET: /Cliente/Delete/5
 
-        public ActionResult Delete(int id)
+        public ActionResult Delete(int? id)
         {
-            return View();
+            var cliente = clienteLN.LeerCliente(
+                new Cliente { ID = id.Value });
+            return View(cliente);
         }
 
         //
         // POST: /Cliente/Delete/5
 
         [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
+        public ActionResult Delete(int? id, Cliente cliente)
         {
-            try
-            {
-                // TODO: Add delete logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
+            clienteLN.Eliminar(new Cliente { ID = id.Value });
+            return RedirectToAction("Index");
         }
     }
 }
